@@ -13,7 +13,7 @@ app.use(express.json())
 app.use(express.urlencoded({extended:true}))
 
 const upload = multer()
-
+const PORT = process.env.PORT || 3000;
 // let question =  'why we use bert ?'
 
 
@@ -66,6 +66,6 @@ app.get('/ask',async (req,res)=>{
     res.send(ans.summary_text)
 })
 
-app.listen(5000, () => {
+app.listen(PORT, () => {
     console.log("Server is running")
 })

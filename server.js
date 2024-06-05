@@ -13,7 +13,7 @@ app.use(express.json())
 app.use(express.urlencoded({extended:true}))
 
 const upload = multer()
-
+const port = const PORT = process.env.PORT || 3000;
 // let question =  'why we use bert ?'
 
 

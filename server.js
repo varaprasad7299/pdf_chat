@@ -2,7 +2,7 @@ import express from 'express';
 import multer from 'multer';
 import cors from 'cors';
 import fs from 'fs'
-import pdfParser from 'pdf-parse'; 
+import pdfParser from 'pdf-parse-vp-version'; 
 import {removeNewlines,sliceStringByCharacters} from './readyData.js'
 import { getAnswer } from './llmChat.js';
 

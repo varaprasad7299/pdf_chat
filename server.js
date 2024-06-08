@@ -27,7 +27,7 @@ app.post('/upload', upload.single('file'), async (req, res) => {
     const data = await pdfParser(req.file.buffer)  
     //console.log(data) 
     if(data.numpages>100){
-        return res.send("the pdf has more than 100 pages")
+        return res.status(400).send("File has more than hunder pages")
     }
     
     const data2 = await removeNewlines(data.text)
